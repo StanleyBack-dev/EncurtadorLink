@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Encurtador de Link - Arcade</title>
+</head>
+<body>
+    <h1 class="tittle">Encurte seu Link</h1>
+    <main class="container-input">
+        <input type="text" name="nome" id="boxtext" placeholder="Cole ou digite a URL"><br>
+        <button class="buttonlink" id="encurtarBtn">Encurtar</button>
+    </main>
+    <p class="msglink">O link encurtado aparecerá abaixo</p>
+    <div id="container-link" class="container-link hide"> 
+        <span class="msgreslink">Seu Link gerado foi:</span>    
+        <span id="linkEncurtado"></span>
+        <span class="clicklink">Clique no Link para copiar</span>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Encurtador de Link Arcade. Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

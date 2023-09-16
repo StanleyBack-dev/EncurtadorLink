@@ -1,0 +1,136 @@
+*{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.tittle{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(11, 11, 155);
+    max-width: 600px;
+    margin-top: 250px;
+    margin-bottom: 35px;
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
+    /* Define o efeito neon com múltiplas sombras */
+    animation: neon 1.5s linear infinite; /* Adiciona uma animação de pulsação neon */
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
+    }
+}
+
+#boxtext::placeholder{
+    color: rgb(5, 0, 0);
+    font-weight: bold;
+}
+
+#boxtext{
+    height: 20px;
+    width: 487px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #DFDFDF;
+}
+
+.buttonlink{
+    color: white;
+    background-color: #1b055d;
+    height: 40px;
+    width: 487px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container-link{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.msglink{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(243, 219, 219, 0.74);
+    margin-right: 295px;
+    margin-top: 8px;
+}
+
+.footer{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-top: 205px;
+}
+
+#linkEncurtado{
+    height: 60px;
+    background-color: rgba(0,0,0 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+    color: white;
+}
+
+#linkEncurtado:hover{
+    transform: scale(1.05);
+}
+
+.clicklink{
+    color:#FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-link:hover .clicklink{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
+
+.msgreslink{
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
